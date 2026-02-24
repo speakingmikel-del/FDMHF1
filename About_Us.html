@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | FAITH DEFENDERS MISSIONS & HUMANITARIAN FOUNDATION</title>
+
+    <!-- Link to Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="about_us.css" />
+    <script>
+      const header = document.getElementById("header");
+    
+      window.addEventListener("scroll", () => {
+        header.classList.toggle("scrolled", window.scrollY > 40);
+      });
+    </script>
+    
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="logo">
+          <img src="images/logo.jpg" alt="FaithDefenders Logo" />
+          FAITH DEFENDERS MISSIONS & HUMANITARIAN FOUNDATION
+        </a>
+    
+        <!-- Desktop Menu -->
+        <nav class="desktop-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html" class="active">About Us</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li class="nav-donate">
+              <button class="donate-btn" type="button" id="donateBtn">
+                Donate
+              </button>
+              <div class="donate-dropdown" id="donateDropdown">
+                <p><span>Bank:</span> Zenith Bank</p>
+                <p><span>Account Name:</span> 1311096126</p>
+                <p><span>Account Number:</span> Faith Defenders Mission and Humanitarian Foundation</p>
+              </div>
+            </li>
+          </ul>
+        </nav>
+    
+        <!-- Hamburger for Mobile -->
+        <div id="hamburger" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <nav id="mobileMenu" class="mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li>
+            <button class="mobile-donate-btn" type="button" id="mobileDonateBtn">
+              Donate
+            </button>
+            <div class="mobile-donate-dropdown" id="mobileDonateDropdown">
+              <p><span>Bank:</span> Zenith Bank</p>
+              <p><span>Account Name:</span> 1311096126</p>
+              <p><span>Account Number:</span> Faith Defenders Mission and Humanitarian Foundation</p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-content" id="about-overview">
+      <h1>About Us</h1>
+
+      <div class="fdmhf-intro">
+        <h2>Faith Defenders Missions & Humanitarian Foundation (FDMHF)</h2>
+        <p>
+          Faith Defenders Missions & Humanitarian Foundation (FDMHF) is a Christian
+          non profit, and non political organization committed to defending the faith,
+          empowering lives, and extending compassion to the vulnerable.
+        </p>
+      
+        <p>
+          Founded on the conviction that faith must find expression through love,
+          <strong>FDMHF</strong> stands at the intersection of spiritual growth,
+          humanitarian service, and community transformation.
+        </p>
+      
+        <p>
+          We reach believers in crisis, strengthen the faith of the oppressed, and equip
+          communities with sustainable means of living. Through our diverse missions from
+          relief response and empowerment to apologetics training, we exist to make Christ
+          known in both word and deed.
+        </p>
+      
+        <h3>Our Story</h3>
+        <p>
+          What began as a vision to strengthen believers in faith has grown into a mission
+          touching lives across Nigeria and beyond.
+        </p>
+      
+        <p>
+          From emergency response in conflict-affected areas to youth empowerment, faith
+          training, and advocacy against gender-based violence, our story is one of
+          compassion in action.
+        </p>
+      
+        <p class="highlight">
+          Every outreach, every training, every gift of support carries one message
+          <em>Christ still cares, and we are His hands extended to the world.</em>
+        </p>
+      </div>
+      
+      <div class="vision-mission">
+        <div class="vision">
+          <img src="images/logo.jpg" alt="Vision Image" />
+          <div class="text">
+            <h2>Our Vision</h2>
+            <p>
+              To see believers and communities strengthened in faith, restored in hope, and equipped to thrive spiritually, socially, and economically.
+            </p>
+          </div>
+        </div>
+
+        <div class="mission">
+          <img src="images/logo.jpg" alt="Mission Image" />
+          <div class="text">
+            <h2>Our Mission</h2>
+            <p>
+              To defend the Christian faith through training and advocacy while providing compassionate aid, empowerment, and sustainable development to vulnerable individuals and communities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="goals" id="about-goals">
+        <h2>Our Core Goals</h2>
+        <ul>
+          <li>To provide relief and empowerment through skill development and education.</li>
+          <li>To advocate for persecuted believers and raise awareness globally.</li>
+          <li>To foster partnerships for greater community impact.</li>
+          <li>To address physical, emotional, and spiritual needs for holistic growth.</li>
+          <li>To support the renovation and construction of places of worship.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== MEET THE TEAM ===== -->
+    <section class="team-section" id="team-section">
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-member ceo">
+          <img src="images/01.jpg" alt="CEO" />
+          <h3>Alabi Olalekan Paul</h3>
+          <p>Chief Executive Officer</p>
+        </div>
+
+        <div class="team-row">
+          <div class="team-member">
+            <img src="images/02.jpg" alt="Program Director" />
+            <h3>Michael Adakole Agene</h3>
+            <p>Program Director</p>
+          </div>
+
+          <div class="team-member">
+            <img src="images/03.jpg" alt="Secretary" />
+            <h3>Adeyemi Mayowa John</h3>
+            <p>Secretary</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+      <div class="footer-grid">
+        <div class="socials">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100083037357036" target="_blank" class="fa-brands fa-facebook-f"></a>
+            </li>
+            <li>
+              <a href="https://youtube.com/@faithdefenderstv7662?si=BPkR3E4zpUvThKwh" target="_blank" class="fa-brands fa-youtube"></a>
+            </li>
+            <li>
+              <a href="#" class="fa-brands fa-instagram"></a>
+            </li>
+            <li>
+              <a href="#" class="fa-brands fa-twitter"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About_Us.html">About Us</a></li>
+            <li><a href="#about-overview">Overview</a></li>
+            <li><a href="#about-goals">Core Goals</a></li>
+            <li><a href="#team-section">Meet the Team</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="index.html#donateBtn">Donate</a></li>
+              <li><a href="index.html#partners-title">Our Partners</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p><span>Phone:</span> +23481885509, +23437695707 &amp; +23469839578</p>
+          <p><span>Email:</span> speak2faithdefenders@gmail.com</p>
+          <p><span>Address:</span> Number 4, ykanfoppao; street kano Nigeria.</p>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 FaithDefenders. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ===== MOBILE MENU SCRIPT ===== -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileDonateBtn = document.getElementById("mobileDonateBtn");
+      const mobileDonateDropdown = document.getElementById("mobileDonateDropdown");
+    
+      // Toggle open/close on hamburger click
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+        if (!mobileMenu.classList.contains("active") && mobileDonateDropdown) {
+          mobileDonateDropdown.classList.remove("active");
+        }
+      });
+    
+      // Close menu when a link is clicked
+      document.querySelectorAll(".mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          mobileMenu.classList.remove("active");
+          if (mobileDonateDropdown) {
+            mobileDonateDropdown.classList.remove("active");
+          }
+        });
+      });
+    
+      // Optional: Close menu if clicking outside
+      document.addEventListener("click", (e) => {
+        if (
+          !hamburger.contains(e.target) &&
+          !mobileMenu.contains(e.target) &&
+          mobileMenu.classList.contains("active")
+        ) {
+          hamburger.classList.remove("active");
+          mobileMenu.classList.remove("active");
+          if (mobileDonateDropdown) {
+            mobileDonateDropdown.classList.remove("active");
+          }
+        }
+      });
+
+      if (mobileDonateBtn && mobileDonateDropdown) {
+        mobileDonateBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          mobileDonateDropdown.classList.toggle("active");
+        });
+
+        document.addEventListener("click", () => {
+          mobileDonateDropdown.classList.remove("active");
+        });
+      }
+      
+      // Fade-in animation for FDMHF section
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        const target = document.querySelector(".fdmhf-intro");
+        if (target) observer.observe(target);
+      });
+
+      const donateBtn = document.getElementById("donateBtn");
+      const donateDropdown = document.getElementById("donateDropdown");
+
+      if (donateBtn && donateDropdown) {
+        donateBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          donateDropdown.classList.toggle("active");
+        });
+
+        document.addEventListener("click", () => {
+          donateDropdown.classList.remove("active");
+        });
+      }
+</script>
+
+          
+    </script>
+    
+  </body>
+</html>

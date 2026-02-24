@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | FAITH DEFENDERS MISSIONS & HUMANITARIAN FOUNDATION</title>
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="logo">
+          <img src="images/logo.jpg" alt="FaithDefenders Logo" />
+          <span>FAITH DEFENDERS MISSIONS & HUMANITARIAN FOUNDATION</span>
+        </a>
+
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About_Us.html">About Us</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li class="nav-donate">
+              <button class="donate-btn" type="button" id="donateBtn">
+                Donate
+              </button>
+              <div class="donate-dropdown" id="donateDropdown">
+                <p><span>Bank:</span> Zenith Bank</p>
+                <p><span>Account Name:</span> 1311096126</p>
+                <p><span>Account Number:</span> Faith Defenders Mission and Humanitarian Foundation</p>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="About_Us.html">About Us</a>
+        <button class="mobile-donate-btn" type="button" id="mobileDonateBtn">
+          Donate
+        </button>
+        <div class="mobile-donate-dropdown" id="mobileDonateDropdown">
+          <p><span>Bank:</span> Zenith Bank</p>
+          <p><span>Account Name:</span> 1311096126</p>
+          <p><span>Account Number:</span> Faith Defenders Mission and Humanitarian Foundation</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-title" id="gallery-top">
+        <h1>Our Gallery</h1>
+        <p>Highlights from outreach, worship, relief, and community transformation.</p>
+      </section>
+
+      <section class="gallery-section" id="gallery-grid">
+        <img src="images/gallery01.jpg" alt="FaithDefenders outreach moment" />
+        <img src="images/gallery02.jpg" alt="FaithDefenders community service" />
+        <img src="images/gallery03.jpg" alt="FaithDefenders worship gathering" />
+        <img src="images/gallery04.jpg" alt="FaithDefenders humanitarian activity" />
+        <img src="images/gallery05.jpg" alt="FaithDefenders mission field engagement" />
+        <img src="images/pic03.jpg" alt="FaithDefenders mission field engagement" />
+        <img src="images/pic04.jpg" alt="FaithDefenders mission field engagement" />
+        <img src="images/pic05.jpg" alt="FaithDefenders mission field engagement" />
+         <img src="images/pic07.jpg" alt="FaithDefenders mission field engagement" />
+          <img src="images/l.jpg" alt="FaithDefenders mission field engagement" />
+           <img src="images/r.jpg" alt="FaithDefenders mission field engagement" />
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer-grid">
+        <div class="socials">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100083037357036"
+                target="_blank"
+                class="fa-brands fa-facebook-f"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://youtube.com/@faithdefenderstv7662?si=BPkR3E4zpUvThKwh"
+                target="_blank"
+                class="fa-brands fa-youtube"
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="fa-brands fa-instagram"></a>
+            </li>
+            <li>
+              <a href="#" class="fa-brands fa-twitter"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About_Us.html">About Us</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="#gallery-top">Gallery Intro</a></li>
+              <li><a href="#gallery-grid">Photo Grid</a></li>
+              <li><a href="index.html#donateBtn">Donate</a></li>
+              <li><a href="index.html#partners-title">Our Partners</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p><span>Phone:</span> +23481885509, +23437695707 &amp; +23469839578</p>
+          <p><span>Email:</span> speak2faithdefenders@gmail.com</p>
+          <p><span>Address:</span> Number 4, ykanfoppao; street kano Nigeria.</p>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 FaithDefenders. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileDonateBtn = document.getElementById("mobileDonateBtn");
+      const mobileDonateDropdown = document.getElementById("mobileDonateDropdown");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+        if (!mobileMenu.classList.contains("active") && mobileDonateDropdown) {
+          mobileDonateDropdown.classList.remove("active");
+        }
+      });
+
+      document.querySelectorAll(".mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          mobileMenu.classList.remove("active");
+          if (mobileDonateDropdown) {
+            mobileDonateDropdown.classList.remove("active");
+          }
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        if (
+          !hamburger.contains(e.target) &&
+          !mobileMenu.contains(e.target) &&
+          mobileMenu.classList.contains("active")
+        ) {
+          hamburger.classList.remove("active");
+          mobileMenu.classList.remove("active");
+          if (mobileDonateDropdown) {
+            mobileDonateDropdown.classList.remove("active");
+          }
+        }
+      });
+
+      if (mobileDonateBtn && mobileDonateDropdown) {
+        mobileDonateBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          mobileDonateDropdown.classList.toggle("active");
+        });
+
+        document.addEventListener("click", () => {
+          mobileDonateDropdown.classList.remove("active");
+        });
+      }
+
+      const currentPage = window.location.pathname.split("/").pop().toLowerCase();
+      const allLinks = document.querySelectorAll(".nav-desktop a, .mobile-menu a");
+
+      allLinks.forEach((link) => {
+        const linkPage = link.getAttribute("href").split("/").pop().toLowerCase();
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      });
+
+      const donateBtn = document.getElementById("donateBtn");
+      const donateDropdown = document.getElementById("donateDropdown");
+
+      if (donateBtn && donateDropdown) {
+        donateBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          donateDropdown.classList.toggle("active");
+        });
+
+        document.addEventListener("click", () => {
+          donateDropdown.classList.remove("active");
+        });
+      }
+    </script>
+  </body>
+</html>
